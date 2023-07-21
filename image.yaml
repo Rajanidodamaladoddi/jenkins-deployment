@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment
+  name: deployment-k8s
   labels:
-    app: app
+    app: app-k8s
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: app
+      app: app-k8s
   template:
     metadata:
       labels:
-        app: app 
+        app: app-k8s
     spec:
       containers:
-      - name: app
-        image: rajaninandu/docker-pipeline
+      - name: app-k8s
+        image: rajaninandu/docker-k8s
         ports:
         - containerPort: 3000
