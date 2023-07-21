@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: app
-        image: nishanth00/hello-world-0.2-snapshot
+        image: rajaninandu/docker-pipeline
         ports:
         - containerPort: 3000
